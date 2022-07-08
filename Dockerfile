@@ -1,8 +1,10 @@
-FROM node:lts
-RUN mkdir -p /home/node/app && chown node:node /home/node/app
-RUN mkdir -p /home/node/app/node_modules && chown node:node /home/node/app/node_modules
-WORKDIR  /home/node/app
-USER node
-COPY --chown=node:node package.json package-lock.json ./
-RUN npm ci --quiet
-COPY --chown=node:node . .
+FROM node:14-alpine
+
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+#RUN npm run builddev
+RUN npm run build
+EXPOSE 4200
+CMD [ "npm", "start" ]
