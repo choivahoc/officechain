@@ -798,7 +798,7 @@ a.text-primary:hover {
 }
 
 .slider .slider-caption span {
-  opacity: .85;
+  opacity: 1;
   text-transform: capitalize;
 }
 
