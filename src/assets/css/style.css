@@ -968,9 +968,10 @@ a.text-primary:hover {
 
 .product {
   position: relative;
-  -webkit-transition: .4s all;
-  transition: .4s all;
   overflow: hidden;
+  box-shadow: rgb(0 0 0 / 8%) 0px 4px 15px;
+  transition: box-shadow 0.25s ease-in-out 0s;
+  border-radius: 10px;
 }
 
 .product:hover .product-hover-overlay {
