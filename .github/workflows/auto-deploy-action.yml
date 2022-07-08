@@ -20,7 +20,7 @@ jobs:
           port: ${{ secrets.PORT }} #port of server - often port is 22
           script: | # run with multiple script
             cd /aura
-            cd edunftapi
+            cd officechain
             git pull
             printf "build docker image"
             ./deploy.sh
