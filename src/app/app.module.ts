@@ -13,6 +13,8 @@ import { ShopComponent } from './shop/shop.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OrdersComponent } from './orders/orders.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { OrdersComponent } from './orders/orders.component';
     ShopComponent,
     CheckoutComponent,
     DashboardComponent,
-    OrdersComponent
+    OrdersComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
